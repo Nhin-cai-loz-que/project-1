@@ -1,0 +1,370 @@
+/* Header */
+.header {
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-child-1 {
+  font-size: 18px;
+  color: var(--color_2);
+  background: var(--color_1);
+  padding: 10px;
+  text-align: center;
+}
+
+.header-child-2 {
+  background: white;
+}
+
+.header-child-2-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header-child-2-main .header-child-2-main-1 a {
+  display: flex;
+  align-items: center;
+}
+
+.header-child-2-main .header-child-2-main-1 a img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.header-child-2-main .header-child-2-main-1 a span {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color_1);
+}
+
+.header-child-2-main .header-child-2-main-2 ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.header-child-2-main .header-child-2-main-2 ul li {
+  margin: 0 10px;
+}
+
+.header-child-2-main .header-child-2-main-2 ul li a {
+  color: var(--color_1);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header-child-2-main .header-child-2-main-2 ul li a:hover {
+  color: #47b5ed;
+}
+
+.header-child-2-main .header-child-2-main-3 {
+  font-size: 18px;
+  color: var(--color_text);
+}
+
+.header-child-2-main .header-child-2-main-4 ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.header-child-2-main .header-child-2-main-4 ul li {
+  margin-left: 20px;
+}
+
+.header-child-2-main .header-child-2-main-4 ul li a {
+  color: var(--color_1);
+  font-size: 25px;
+}
+/* End Header */
+
+/* Section-1 */
+.section-1 {
+  background: #f0f2f5;
+  padding: 80px 0;
+}
+
+.section-1 .section-1-main {
+  display: flex;
+}
+
+.section-1-main .section-1-main-content {
+  width: 50%;
+}
+
+.section-1-main-content .big-content {
+  font-size: 60px;
+  color: var(--color_1);
+}
+
+.section-1-main-content .small-content {
+  font-size: 22px;
+  color: var(--color_1);
+  margin-bottom: 40px;
+}
+
+.section-1-main-content .useful {
+  display: flex;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.section-1-main-content .useful .useful-1 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.section-1-main-content .useful .useful-1 i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.section-1-main-content .useful .useful-1 span {
+  font-size: 18px;
+}
+
+.section-1-main .section-1-main-image {
+  width: 50%;
+  position: relative;
+}
+
+.section-1-main .section-1-main-image img {
+  width: 100%;
+  height: auto;
+}
+
+.section-1-main .section-1-main-image .sale {
+  background: var(--color_2);
+  color: var(--color_1);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  right: 150px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-1-main .section-1-main-image .sale span:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.section-1-main .section-1-main-image .sale span:nth-child(2) {
+  font-size: 50px;
+  font-weight: 700;
+}
+/* End Section-1 */
+
+/* Section-2 */
+.section-2 .section-2-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+
+/* aspect-ratio : tỉ lệ ele wid / height */
+.section-2 .box-image {
+  width: calc(100% / 3 - 20px);
+  height: 100%;
+  aspect-ratio: 4/3;
+  position: relative;
+  overflow: hidden;
+}
+
+/* object-fit thuộc tính quyết định ảnh, video, iframe có được kéo dãn hay không và kéo như thế nào */
+.section-2 .box-image img {
+  width: 100%;
+  height: 100%;
+  /* ảnh sẽ được cắt để vừa với ele mà không cần co giãn */
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.section-2 .box-image:hover img {
+  transform: scale(1.1);
+}
+
+.section-2 .box-image .image-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+
+.section-2 .image-content .image-1-content-1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  display: inline-block;
+  background: #13a05d;
+  padding: 2px 15px;
+  border-radius: 45px;
+  margin-bottom: 15px;
+}
+
+.section-2 .image-content .image-1-content-2 {
+  color: white;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.section-2 .image-content .image-2-content-1 {
+  font-size: 30px;
+  color: var(--color_1);
+  padding-bottom: 10px;
+}
+
+.section-2 .image-content .image-2-content-2 {
+  font-size: 50px;
+  color: var(--color_2);
+  padding-bottom: 20px;
+}
+
+.section-2 .image-content .image-3-content-1 {
+  font-size: 30px;
+  color: var(--color_1);
+}
+
+.section-2 .image-content .image-3-content-2 {
+  font-size: 50px;
+  color: var(--color_2);
+  padding-bottom: 10px;
+}
+
+.section-2 .image-content .image-3-content-3 {
+  font-size: 25px;
+  padding: 10px;
+  text-decoration: line-through;
+}
+/* End Section-2 */
+
+/* Section-3 */
+.section-3 {
+  background: #f0f2f5;
+  padding: 80px 0;
+}
+
+.section-3 .section-3-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-3 .section-3-main-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.section-3 .section-3-main-1 .main-1-big-content {
+  font-size: 50px;
+  color: var(--color_1);
+  text-align: center;
+  max-width: 500px;
+  margin-top: 0;
+}
+
+.section-3 .section-3-main-1 .main-1-small-content {
+  font-size: 25px;
+  text-align: center;
+  max-width: 700px;
+}
+.section-3 .section-3-main-2 {
+  display: flex;
+  padding: 0 130px;
+}
+
+.section-3 .section-3-main-2 .main-2-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.section-3 .section-3-main-2 .main-2-box i {
+  font-size: 50px;
+  padding-bottom: 40px;
+}
+
+.section-3 .section-3-main-2 .main-2-box h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+/* End Section-3 */
+
+/* Section-4 */
+.section-4 .section-4-main {
+  display: flex;
+  padding: 80px 0;
+}
+
+.section-4 .section-4-main .section-4-main-content {
+  width: 50%;
+}
+
+.section-4 .section-4-main-content .big-content {
+  font-size: 60px;
+  max-width: 300px;
+  color: var(--color_1);
+}
+
+.section-4 .section-4-main-content .small-content {
+  font-size: 20px;
+  color: var(--color_1);
+  max-width: 400px;
+  margin-bottom: 50px;
+}
+
+.section-4 .section-4-main .section-4-main-image {
+  width: 50%;
+}
+
+.section-4 .section-4-main-image img {
+  width: 100%;
+  height: auto;
+}
+/* End Section-4 */
+
+/* Section-5 */
+.section-5 {
+  background: #f0f2f5;
+  padding: 80px 0;
+}
+
+.section-5 .section-5-main{
+  background-image: url(../images/features2.jpg);
+}
+
+.section-5 .button-3 {
+  color: white;
+  font-size: 20px;
+  background: #13a05d;
+  padding: 15px 40px;
+  border-radius: 45px;
+  display: inline-block;
+}
+
+.section-5 .button-3:hover {
+  color: #13a05d;
+  background: white;
+  border: 2px solid #13a05d;
+  transition: background 0.5s ease;
+}
+/* End Section-5 */
